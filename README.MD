@@ -49,7 +49,7 @@ public class BikeTravelStrategy implements TravelStrategy {
     }
 }
 ```
-使用 `ExtensionLoader` , 查找对应的GSI接口实现类并加载, 然后根据名称调用相应方法
+使用 `ExtensionLoader` , 查找对应的SGI接口实现类并加载, 然后根据名称调用相应方法
 
 ```java
 ExtensionLoader<TravelStrategy> loader = ExtensionLoader.getExtensionLoader(TravelStrategy.class);
